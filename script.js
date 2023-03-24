@@ -5,6 +5,11 @@ function calculateGrade() {
     const chem = Number(document.getElementById('chem').value)
     const comp = Number(document.getElementById('comp').value)
 
+    if(eng === "" || math === "" ||  phy === "" || chem === "" || comp === ""){
+        alert("please enter all the marks")
+        return
+    }
+
     if(isNaN(eng) || eng < 0 || eng > 100 || 
     isNaN(math) || math < 0 || math > 100 || 
     isNaN(phy) || phy < 0 || phy > 100 || 
@@ -34,6 +39,6 @@ function calculateGrade() {
         grade = "F"
     }
     document.getElementById('total').textContent = totalMarks
-    document.getElementById('avg').textContent = avgMarks.toFixed(2)
+    document.getElementById('avg').textContent = avgMarks.toFixed(1)
     document.getElementById('grade').textContent = grade
 }
