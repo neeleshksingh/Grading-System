@@ -12,29 +12,29 @@
         <section class="sec1 flex-col">
             <h1>Grading System in js</h1>
             <label for="eng">English</label>
-            <input type="number">
+            <input type="number" id="eng">
             <label for="math">Maths</label>
-            <input type="number">
+            <input type="number" id="math">
             <label for="phy">Physics</label>
-            <input type="number">
+            <input type="number" id="phy">
             <label for="chem">Chemistry</label>
-            <input type="number">
+            <input type="number" id="chem">
             <label for="comp">Computer</label>
-            <input type="number">
-            <button>Calculate Grade</button>
+            <input type="number" id="comp">
+            <button onclick="calculateGrade()">Calculate Grade</button>
         </section>
         <section class="sec2 flex-col">
             <div class="mark flex-col">
                 <h1>Total</h1>
-                <h3></h3>
+                <h3 id="total"></h3>
             </div>
             <div class="mark flex-col">
                 <h1>Average</h1>
-                <h3></h3>
+                <h3 id="avg"></h3>
             </div>
             <div class="mark flex-col">
                 <h1>Grade</h1>
-                <h3></h3>
+                <h3 id="grade"></h3>
             </div>
         </section>
     <script src="script.js"></script>
