@@ -5,6 +5,15 @@ function calculateGrade() {
     const chem = Number(document.getElementById('chem').value)
     const comp = Number(document.getElementById('comp').value)
 
+    if(isNaN(eng) || eng < 0 || eng > 100 || 
+    isNaN(math) || math < 0 || math > 100 || 
+    isNaN(phy) || phy < 0 || phy > 100 || 
+    isNaN(chem)|| chem < 0 || chem > 100 ||
+    isNaN(comp) || comp < 0 || comp > 100){
+        alert("Please enter marks in range of 100")
+        return
+    }
+
     const totalMarks = eng + math + phy + chem + comp
     const avgMarks = totalMarks / 5
 

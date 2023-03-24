@@ -8,6 +8,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 20% 50%;
+    background-color: lightblue;
 }
 .flex-col{
     display: flex;
@@ -28,6 +29,7 @@ body{
     gap: 10px;
     justify-content: center;
     padding-left: 50px;
+    background-color: white;
 }
 .sec2{
     border: 1px solid;
@@ -36,6 +38,7 @@ body{
     padding-left: 50px;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 input{
     width: 50%;
@@ -44,6 +47,9 @@ input{
 button{
     width: 50%;
     height: 2em;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 .mark{
     border: 1px solid;
